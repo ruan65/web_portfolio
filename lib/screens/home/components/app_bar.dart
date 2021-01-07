@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_portfolio/constant.dart';
+import 'package:web_portfolio/components/default_button.dart';
 import 'package:web_portfolio/screens/home/components/menu_item.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -52,11 +52,9 @@ class CustomAppBar extends StatelessWidget {
             title: "Login",
             onPress: () {},
           ),
-          FlatButton(
-            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
-            color: kPrimaryColor,
-            onPressed: () {},
-            child: Text("Get Started".toUpperCase()),
+          DefaultButton(
+            text: "Get Started",
+            onPress: () {},
           ),
         ],
       ),
